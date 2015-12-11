@@ -1,16 +1,73 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title> ROCK PAPER SCIX</title>
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset 1">
-        
+      <div class="col-md-4">
+        <strong>User Score: </strong><span id="userScore"></span>
+        <br />     
+      </div>
+      <div class="col-md-4">
+        <strong>Computer Score: </strong><span id="computerScore"></span>
+        <br />
+      </div>
+      <div class="col-md-4">
+        <strong>Round Count: </strong><span id="roundCount">1</span>
+        <br />
       </div>
     </div>
-  </div>
+    <div class="row well">
+      <div class="col-md-5">
+        <div class="jumbotoron">  
+          <img class="main-block"  id="bulbasaur" src="http://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png">
+          <img class="main-block" id="charmander" src="http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png">
+          <img class="main-block" id="squirtle" src="http://img2.wikia.nocookie.net/__cb20150330015844/pokemon/images/6/6b/007Squirtle_OS_anime_3.png">
+        </div>   
+      </div> 
+      <div class="col-md-2">
+        <img class="img-responsive" src="http://vignette2.wikia.nocookie.net/deathbattle/images/6/64/Vs.png/revision/latest?cb=20150618231458">
+      </div>
+      <div class="col-md-5">
+        <div class="jumbotoron">    
+          <img class="main-block" id="bulbasaur-second" src="http://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png">
+          <img class="main-block" id="charmander-second" src="http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png">
+          <img class="main-block" id="squirtle-second" src="http://img2.wikia.nocookie.net/__cb20150330015844/pokemon/images/6/6b/007Squirtle_OS_anime_3.png">
+        </div>   
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+      <span class="pick">Pick your Type</span>
+      <br>
+        <span class="box"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="list-inline">
+          <li><button class="pokemon btn btn-success" data-tag="grass"><img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/736x/59/53/44/5953444e7825b54fd0f2cbfafc326ad3.jpg"></button></li>
 
+          <li><button class="pokemon btn btn-danger" data-tag="fire"><img class="img-responsive" src="http://kandipatterns.com/images/patterns/misc/15327_Pokemon_Fire_Type.png"></button></li>
+          <li><button class="pokemon btn btn-info" data-tag="water"><img  class="img-responsive" src="http://kandipatterns.com/images/patterns/misc/15324_Pokemon_Water_Type.png"></button></li>
+        </ul>
+       
+      </div>  
+    </div>
+  </div>
+    
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/randomString.js"></script>
+  <script type="text/javascript" src="js/scoreTracker.js"></script>
+  <script type="text/javascript" src="js/logic.js"></script>
 </body>
 </html>
